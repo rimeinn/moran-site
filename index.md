@@ -5,7 +5,7 @@ layout: home
 hero:
   name: 魔改自然碼
   text: 簡潔優雅的輸入法
-  tagline: a RimeInn Project
+  # tagline: a RimeInn Project
   actions:
     - theme: brand
       text: 立即開始
