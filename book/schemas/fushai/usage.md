@@ -43,3 +43,9 @@ order: 2
 * 上屏「輔篩模式」。
 * 再次輸入 fu ul mo ui，觀察到首選是「輔篩模式」，說明該詞語已經進入用戶詞庫。
 
+演示視頻：
+
+<video controls>
+  <source src="../../.gitbook/assets/fushai-input-demo.mov" type="video/mp4">
+  你的瀏覽器不支持視頻！
+</video>

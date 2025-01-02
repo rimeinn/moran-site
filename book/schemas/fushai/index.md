@@ -13,3 +13,9 @@ order: 40
 
 該模式適合輕量級輔助碼用戶：主要輸入雙拼、偶爾使用輔助碼選字造詞。
 
+演示視頻：
+
+<video controls>
+  <source src="../../.gitbook/assets/fushai-input-demo.mov" type="video/mp4">
+  你的瀏覽器不支持視頻！
+</video>
