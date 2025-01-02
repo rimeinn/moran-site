@@ -7,10 +7,9 @@ title: 方案生成工具
 
 本項目提供一個強大的方案生成工具 tools/schemagen.py，可滿足方案生成和維護的諸多需求。
 
-[//]: # ({% hint style="info" %})
+:::info
 該工具不隨方案打包分發，請從 [GitHub repo](https://github.com/rimeinn/rime-moran/blob/main/tools/schemagen.py) 上獲取。
-
-[//]: # ({% endhint %})
+:::
 
 ## 通用參數
 
@@ -44,10 +43,9 @@ title: 方案生成工具
 
 </details>
 
-[//]: # ({% hint style="info" %})
+:::info
 在處理簡化字方案時，通常需要設定 pinyin-table 參數。
-
-[//]: # ({% endhint %})
+:::
 
 ## 命令 gen-chars
 
@@ -120,12 +118,11 @@ python3 schemagen.py gen-chars
 
 根據最新的 zrmdb 定義，更新 compact 詞庫中的輔助碼部分。
 
-[//]: # ({% hint style="info" %})
+:::info
 這個命令可用於將繁體詞庫自動轉換成簡體詞庫後，再更新輔助碼。
 
 具體用法可參照 `tools/update_compact_dicts.sh。`
-
-[//]: # ({% endhint %})
+:::
 
 | 參數            | 取值         | 說明      |
 | ------------- | ---------- | ------- |
@@ -135,12 +132,11 @@ python3 schemagen.py gen-chars
 
 根據最新 pinyin-table，更新 chars 碼表的詞頻。
 
-[//]: # ({% hint style="info" %})
+:::info
 這個命令可用於將繁體字表自動轉換成簡體字表後，再更新輔助碼。
 
 具體用法可參照 `make_simp_dist.sh`。
-
-[//]: # ({% endhint %})
+:::
 
 | 參數            | 取值         | 說明      |
 | ------------- | ---------- | ------- |
@@ -161,7 +157,7 @@ python3 schemagen.py gen-chars
 
 轉換詞庫的雙拼方案爲其他方案。可以將本方案的自然碼雙拼轉換成其他雙拼。
 
-輸入雙拼方案由[通用參數](/book/tools/schemagen/index.md#通用參數)中的 `--double-pinyin` 指定，輸出方案由 `--to` 指定。
+輸入雙拼方案由[通用參數](./index.md#通用參數)中的 `--double-pinyin` 指定，輸出方案由 `--to` 指定。
 
 | 參數            | 取值           | 說明      |
 | ------------- | ------------ | ------- |
@@ -172,7 +168,7 @@ python3 schemagen.py gen-chars
 
 轉換固定碼表的雙拼方案爲其他方案。可以將本方案的自然碼雙拼轉換成其他雙拼。
 
-輸入雙拼方案由[通用參數](/book/tools/schemagen/index.md#通用參數)中的 `--double-pinyin` 指定，輸出方案由 `--to` 指定。
+輸入雙拼方案由[通用參數](./index.md#通用參數)中的 `--double-pinyin` 指定，輸出方案由 `--to` 指定。
 
 | 參數            | 取值           | 說明      |
 | ------------- | ------------ | ------- |

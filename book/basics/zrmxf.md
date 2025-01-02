@@ -35,7 +35,7 @@ title: 自然碼形輔
 
 自然碼是「見字識根」類輸入方案，因此您**無需特意記憶字根**（實際上也是記不完的，根本不存在一個窮舉所有字根的列表）。只要在打字時根據規則取碼即可。下圖僅作爲參考：
 
-<figure><img src="/book/.gitbook/assets/自然码辅助码ppt.001.png" alt=""><figcaption><p>自然碼輔助碼鍵位圖</p></figcaption></figure>
+<figure><img src="/book/.gitbook/assets/自然码辅助码ppt.001.png" alt=""><figcaption><p>自然碼輔助碼鍵位圖（製圖：更漏子）</p></figcaption></figure>
 
 大部分字根歸類到其聲母鍵位上，只有少量字根需要特別注意（按重要程度排序）：
 
@@ -71,11 +71,11 @@ title: 自然碼形輔
 <figure><img src="/book/.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
 ::: info
-目前僅在[默認模式](/book/usage)和[整句模式](/book/schemas/zhengju)中可用。
+目前僅在[默認模式](../usage/)和[整句模式](../schemas/zhengju/)中可用。
 :::
 
 ## 自然碼形輔特點
 
 * 學習成本極低
+* 依據漢字本身的信息編碼，作者主觀干擾極少
 * 傳承字和簡化字前三碼往往一致，在不同字形間切換幾乎沒有成本
-

@@ -9,7 +9,7 @@ title: 特性說明
 
 ### 自定義簡碼
 
-簡碼碼表與[字詞模式](/book/schemas/zici)碼表共享，即：
+簡碼碼表與[字詞模式](../schemas/zici/)碼表共享，即：
 
 * 傳承字版：`moran_fixed.dict.yaml`
 * 簡化字版：`moran_fixed_simp.dict.yaml`
@@ -25,7 +25,7 @@ patch:
   moran/quick_code_indicator: "´_>`"
 ```
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>自定義簡碼提示符</p></figcaption></figure>
+<figure><img src="/book/.gitbook/assets/image (4).png" alt=""><figcaption><p>自定義簡碼提示符</p></figcaption></figure>
 
 設置爲空可以**取消簡碼提示符**（但簡碼效果仍在）**：**
 
@@ -34,14 +34,14 @@ patch:
   moran/quick_code_indicator: ""
 ```
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>取消簡碼提示符的效果</p></figcaption></figure>
+<figure><img src="/book/.gitbook/assets/image (5).png" alt=""><figcaption><p>取消簡碼提示符的效果</p></figcaption></figure>
 
 ### 四碼時注入碼表選項到次選
 
 | 注入                                         | 配置選項                      | 示例                                                                        |
 | ------------------------------------------ | ------------------------- | ------------------------------------------------------------------------- |
-| <p>單字<br>若四碼在字詞碼表中有對應的單字，則注入到次選</p>        | `moran/show_chars_anyway` | <img src="../.gitbook/assets/image (35).png" alt="" data-size="original"> |
-| <p>非二字詞語<br>若四碼在字詞碼表中有對應的三字以上詞語，則注入到次選</p> | `moran/show_words_anyway` | <img src="../.gitbook/assets/image (36).png" alt="" data-size="original"> |
+| <p>單字<br>若四碼在字詞碼表中有對應的單字，則注入到次選</p>        | `moran/show_chars_anyway` | <img src="/book/.gitbook/assets/image (35).png" alt="" data-size="original"> |
+| <p>非二字詞語<br>若四碼在字詞碼表中有對應的三字以上詞語，則注入到次選</p> | `moran/show_words_anyway` | <img src="/book/.gitbook/assets/image (36).png" alt="" data-size="original"> |
 
 默認開啓詞語注入，關閉單字注入。配置方法：編輯 `moran.custom.yaml`
 
@@ -59,7 +59,7 @@ patch:
 
 開關在選單中顯示爲「固詞」和「動詞」。
 
-<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/book/.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 ### 單字出簡讓全設置
 
@@ -113,7 +113,7 @@ Emoji 定義在 `opencc/moran_emoji.txt` 中。
 
 | 🈶                                                                        | 🈚️                                                                       |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| <img src="../.gitbook/assets/image (41).png" alt="" data-size="original"> | <img src="../.gitbook/assets/image (42).png" alt="" data-size="original"> |
+| <img src="/book/.gitbook/assets/image (41).png" alt="" data-size="original"> | <img src="/book/.gitbook/assets/image (42).png" alt="" data-size="original"> |
 
 ### 簡繁轉換
 
@@ -132,11 +132,11 @@ Emoji 定義在 `opencc/moran_emoji.txt` 中。
 
 此外，Shift+Backspace 會從上一個字的末尾刪除輸入。
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td>輸入 lm jx</td><td><img src="../.gitbook/assets/image (27).png" alt="" data-size="original"></td><td></td></tr><tr><td>輸入大寫 Z，z 追加到前一個字末</td><td><img src="../.gitbook/assets/image (28).png" alt="" data-size="original"></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td>輸入 lm jx</td><td><img src="/book/.gitbook/assets/image (27).png" alt="" data-size="original"></td><td></td></tr><tr><td>輸入大寫 Z，z 追加到前一個字末</td><td><img src="/book/.gitbook/assets/image (28).png" alt="" data-size="original"></td><td></td></tr></tbody></table>
 
 要取消此功能，編輯 `moran.schema.yaml`，從 `key_bindings` 中刪去 `moran_capital_for_last_syllable`：
 
-<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/book/.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 ### 詞語級輔助
 
@@ -155,18 +155,30 @@ patch:
 
 ### 常規符號與顏文字
 
-[//]: # ({% hint style="info" %})
+:::tip
 這些符號在 `symbols.yaml` 中定義，與其他 Rime 方案共享。
-
-[//]: # ({% endhint %})
+:::
 
 **特殊符號**
 
-<table><thead><tr><th width="215">打法</th><th>符號</th></tr></thead><tbody><tr><td>/tab</td><td>製表符（Tab 鍵）</td></tr><tr><td>/kg</td><td>全角空格</td></tr><tr><td>/zb<br>/vb</td><td>畫表格用的符號，如 ┌┐┼ 等</td></tr></tbody></table>
+| 打法  | 符號                   |
+|-------|------------------------|
+| /tab  | 製表符（Tab 鍵）        |
+| /kg   | 全角空格               |
+| /zb   | 畫表格用的符號，如 ┌┐┼ 等|
+| /vb   | 畫表格用的符號，如 ┌┐┼ 等|
 
 **常用符號**
 
-<table><thead><tr><th width="216">打法</th><th>符號類型</th><th>示例</th></tr></thead><tbody><tr><td>/xl</td><td>小寫希臘字母</td><td>αβγ</td></tr><tr><td>/xld</td><td>大寫希臘字母</td><td>ΓΔΘ</td></tr><tr><td>/2</td><td>數字變體</td><td>₂²②❷⓶㈡</td></tr><tr><td>/u</td><td>字母變體</td><td>ūúűǔùüǖǘ</td></tr><tr><td>/sb</td><td>上標</td><td>⁰¹²³</td></tr><tr><td>/xb</td><td>下標</td><td>₀₁₂₃</td></tr><tr><td>/szq</td><td>帶圈數字</td><td>⓪①②③</td></tr></tbody></table>
+| 打法  | 符號類型     | 示例           |
+|-------|--------------|----------------|
+| /xl   | 小寫希臘字母 | αβγ           |
+| /xld  | 大寫希臘字母 | ΓΔΘ           |
+| /2    | 數字變體     | ₂²②❷⓶㈡      |
+| /u    | 字母變體     | ūúűǔùüǖǘ     |
+| /sb   | 上標         | ⁰¹²³          |
+| /xb   | 下標         | ₀₁₂₃          |
+| /szq  | 帶圈數字     | ⓪①②③         |
 
 **顏文字**
 
@@ -176,44 +188,41 @@ patch:
 
 ### 快符和重複上屏
 
-[//]: # ({% hint style="info" %})
+:::info
 快符在 `moran_fixed.dict.yaml` 和 `moran_fixed_simp.dict.yaml` 中定義。
 
 由于每個人所用的符號習慣不同，你可以修改上述文件中的定義以滿足自己的需求。
-
-[//]: # ({% endhint %})
+:::
 
 快符是一種快速輸入標點符號的方法，打法是 `;` + 一個字母，直接上屏對應的符號。這種打法避開了一些較難按的組合，也避開了諸如雙引號和單引號的匹配問題。
 
 其中 `;d` 是特殊的，用於重複上次上屏內容。
 
-[//]: # ({% hint style="info" %})
-;d 可以理解爲 duplicate。;t 是 tilde。
+:::tip
+`;d` 可以理解爲 duplicate。`;t` 是 tilde。
+:::
 
-[//]: # ({% endhint %})
+:::warning
+僅 librime >= 1.12 支持 `;d` 自動上屏，更老的版本需要多按一次空格鍵。
+:::
 
-[//]: # ({% hint style="info" %})
-目前的 librime 無法支持 ;d 自動上屏，需要多按一次空格鍵。可能在未來某個 librime（也許是 1.12 ？）更新後將可以支持自動上屏。不需要做進一步的特殊適配。
-
-[//]: # ({% endhint %})
-
-<figure><img src="../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/book/.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 
 ### 數字與金額
 
 | 編碼              | 說明     | 效果                                                                        |
 | --------------- | ------ | ------------------------------------------------------------------------- |
-| **`S`** + 十進制數字 | 大寫數字轉換 | <img src="../.gitbook/assets/image (37).png" alt="" data-size="original"> |
+| **`S`** + 十進制數字 | 大寫數字轉換 | <img src="/book/.gitbook/assets/image (37).png" alt="" data-size="original"> |
 
 ### 日期與時間
 
-<table><thead><tr><th width="191">編碼</th><th>說明</th><th>效果</th></tr></thead><tbody><tr><td><strong><code>N</code></strong> + 公曆日期</td><td>公曆日期轉農曆日期</td><td><img src="../.gitbook/assets/image (19).png" alt="" data-size="original"></td></tr><tr><td><code>osj</code>, <code>ouq</code>, <code>otime</code></td><td>輸出當前時間</td><td><img src="../.gitbook/assets/image (12).png" alt="" data-size="original"></td></tr><tr><td><code>orq</code>, <code>odate</code></td><td>輸出當前公曆日期</td><td><img src="../.gitbook/assets/image (11).png" alt="" data-size="original"></td></tr><tr><td><code>onl</code></td><td>輸出當前農曆日期</td><td><img src="../.gitbook/assets/image (10).png" alt="" data-size="original"></td></tr><tr><td><code>ojq</code></td><td>輸出當前節氣</td><td><img src="../.gitbook/assets/image (13).png" alt="" data-size="original"></td></tr><tr><td><code>oww</code></td><td>輸出當前週數（本週是今年的第幾週）</td><td><img src="../.gitbook/assets/image (15).png" alt="" data-size="original"></td></tr><tr><td><code>oxq</code>, <code>oweek</code></td><td>輸出星期</td><td><img src="../.gitbook/assets/image (16).png" alt="" data-size="original"></td></tr><tr><td><code>ors</code></td><td>輸出 ISO8601 格式時間</td><td><img src="../.gitbook/assets/image (17).png" alt="" data-size="original"></td></tr><tr><td><code>oepoch</code></td><td>輸出 UNIX 時間戳</td><td><img src="../.gitbook/assets/image (18).png" alt="" data-size="original"></td></tr></tbody></table>
+<table><thead><tr><th width="191">編碼</th><th>說明</th><th>效果</th></tr></thead><tbody><tr><td><strong><code>N</code></strong> + 公曆日期</td><td>公曆日期轉農曆日期</td><td><img src="/book/.gitbook/assets/image (19).png" alt="" data-size="original"></td></tr><tr><td><code>osj</code>, <code>ouq</code>, <code>otime</code></td><td>輸出當前時間</td><td><img src="/book/.gitbook/assets/image (12).png" alt="" data-size="original"></td></tr><tr><td><code>orq</code>, <code>odate</code></td><td>輸出當前公曆日期</td><td><img src="/book/.gitbook/assets/image (11).png" alt="" data-size="original"></td></tr><tr><td><code>onl</code></td><td>輸出當前農曆日期</td><td><img src="/book/.gitbook/assets/image (10).png" alt="" data-size="original"></td></tr><tr><td><code>ojq</code></td><td>輸出當前節氣</td><td><img src="/book/.gitbook/assets/image (13).png" alt="" data-size="original"></td></tr><tr><td><code>oww</code></td><td>輸出當前週數（本週是今年的第幾週）</td><td><img src="/book/.gitbook/assets/image (15).png" alt="" data-size="original"></td></tr><tr><td><code>oxq</code>, <code>oweek</code></td><td>輸出星期</td><td><img src="/book/.gitbook/assets/image (16).png" alt="" data-size="original"></td></tr><tr><td><code>ors</code></td><td>輸出 ISO8601 格式時間</td><td><img src="/book/.gitbook/assets/image (17).png" alt="" data-size="original"></td></tr><tr><td><code>oepoch</code></td><td>輸出 UNIX 時間戳</td><td><img src="/book/.gitbook/assets/image (18).png" alt="" data-size="original"></td></tr></tbody></table>
 
 ### Unicode
 
 | 編碼              | 說明                     | 示例                                                                        |
 | --------------- | ---------------------- | ------------------------------------------------------------------------- |
-| **`U`** + 十六進制數 | 輸出十六進制數所對應的 Unicode 字符 | <img src="../.gitbook/assets/image (38).png" alt="" data-size="original"> |
+| **`U`** + 十六進制數 | 輸出十六進制數所對應的 Unicode 字符 | <img src="/book/.gitbook/assets/image (38).png" alt="" data-size="original"> |
 
 ## 信息提示
 
@@ -221,16 +230,16 @@ patch:
 
 | 查詢信息            | 開關鍵      | 示例                                                                        |
 | --------------- | -------- | ------------------------------------------------------------------------- |
-| Unicode 碼位和所在字集 | `Ctrl-u` | <img src="../.gitbook/assets/image (22).png" alt="" data-size="original"> |
-| 輔助碼及其拆分         | `Ctrl-i` | <img src="../.gitbook/assets/image (23).png" alt="" data-size="original"> |
-| 漢語拼音            | `Ctrl+.` | <img src="../.gitbook/assets/image (24).png" alt="" data-size="original"> |
+| Unicode 碼位和所在字集 | `Ctrl-u` | <img src="/book/.gitbook/assets/image (22).png" alt="" data-size="original"> |
+| 輔助碼及其拆分         | `Ctrl-i` | <img src="/book/.gitbook/assets/image (23).png" alt="" data-size="original"> |
+| 漢語拼音            | `Ctrl+.` | <img src="/book/.gitbook/assets/image (24).png" alt="" data-size="original"> |
 
 ### 簡碼和輔助碼提示
 
 | 提示                         | 開關參數                           | 示例                                                                        |
 | -------------------------- | ------------------------------ | ------------------------------------------------------------------------- |
-| **簡碼提示**：自動提示其他簡碼打法，顯示在⚡右邊 | `moran/enable_quick_code_hint` | <img src="../.gitbook/assets/image (31).png" alt="" data-size="original"> |
-| **輔助碼提示**：自動提示單字輔助碼，顯示在⚡左邊 | `moran/enable_aux_hint`        | <img src="../.gitbook/assets/image (33).png" alt="" data-size="original"> |
+| **簡碼提示**：自動提示其他簡碼打法，顯示在⚡右邊 | `moran/enable_quick_code_hint` | <img src="/book/.gitbook/assets/image (31).png" alt="" data-size="original"> |
+| **輔助碼提示**：自動提示單字輔助碼，顯示在⚡左邊 | `moran/enable_aux_hint`        | <img src="/book/.gitbook/assets/image (33).png" alt="" data-size="original"> |
 
 這兩個功能需要修改方案進行開關，編輯 `moran.custom.yaml`：
 
@@ -242,24 +251,23 @@ patch:
 
 兩個提示可以同時打開。
 
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption><p>簡碼和輔助碼提示同時打開的顯示效果</p></figcaption></figure>
+<figure><img src="/book/.gitbook/assets/image (34).png" alt=""><figcaption><p>簡碼和輔助碼提示同時打開的顯示效果</p></figcaption></figure>
 
 ## 外語輸入
 
-[//]: # ({% hint style="info" %})
+:::warning
 此處所說的外語輸入並不能實現一口氣輸入「我今天學了C語言」的效果。
-
-[//]: # ({% endhint %})
+:::
 
 ### 英語輸入
 
 默認**開啟**。英語詞庫文件爲 `moran_english.dict.yaml`。
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>英語輸入效果</p></figcaption></figure>
+<figure><img src="/book/.gitbook/assets/image (2).png" alt=""><figcaption><p>英語輸入效果</p></figcaption></figure>
 
 要關閉該功能，可編輯 `moran.schema.yaml` 刪除或註釋掉 `table_translator@english`：
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/book/.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### 日語輸入（輕量級）
 
@@ -267,7 +275,7 @@ patch:
 
 默認**關閉**。日語詞庫文件爲 `moran_japanese.dict.yaml`。
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>日語輸入效果</p></figcaption></figure>
+<figure><img src="/book/.gitbook/assets/image (3).png" alt=""><figcaption><p>日語輸入效果</p></figcaption></figure>
 
 要開啓日語輸入功能，請编辑 `moran.custom.yaml`：
 
@@ -279,7 +287,7 @@ patch:
 
 此外，方案還支持使用 `ojp` 引導純日語輸入，配置方法：
 
-```
+```yaml
 patch:
   schema/dependencies/+: [moran_japanese]
   engine/translators/+: [table_translator@japanese, table_translator@japanese_o]
@@ -287,20 +295,18 @@ patch:
 
 ### 全功能版日語輸入
 
-推薦使用 Kuroame 製作的 rime-kagiroi 方案：該方案基於 mozc 詞庫並手動用 Lua 實現了 Viterbi 算法，是目前整句轉換效果最好的 Rime 日語方案。
-
-[//]: # ({% embed url="https://github.com/rimeinn/rime-kagiroi/" %})
+推薦使用 Kuroame 製作的 [`rime-kagiroi` 方案](https://github.com/rimeinn/rime-kagiroi/)：該方案基於 mozc 詞庫並手動用 Lua 實現了 Viterbi 算法，是目前整句轉換效果最好的 Rime 日語方案。
 
 參考配置方法：
 
-1. 首先安裝 rime-kagiroi 方案，可通過 plum 安裝 rimeinn/rime-kagiroi 配方。
+1. 首先安裝 rime-kagiroi 方案，可通過 plum 安裝 `rimeinn/rime-kagiroi` 配方。
 2. 修改 moran.custom.yaml（或其他對應方案的 custom.yaml）：
 
 ```yaml
 patch:
   # 參考 rime-kagiroi 的 README
   schema/depenencies/+: [kagiroi]  # 增加依賴，可自動連帶部署 kagiroi 方案而無需增加到 schema_list 中
-  engine/segmentors/@before 3: affix_segmentor@kagiroi  # 用於識別 ok 前綴
+  engine/segmentors/@before 5: affix_segmentor@kagiroi  # 用於識別 ok 前綴
   engine/translators/+: [lua_translator@*kagiroi/kagiroi_translator]  # 增加 kagiroi 翻譯器
   kagiroi:  # 設置 ok 前綴
     prefix: ok
@@ -309,7 +315,7 @@ patch:
   recognizer/patterns/kagiroi: '(^ok[a-z\-]*$)'  # 用於識別 ok 前綴
 ```
 
-<figure><img src="../.gitbook/assets/CleanShot 2024-12-09 at 19.53.18@2x.png" alt=""><figcaption><p>輸入 ok 後可直接直接輸入完整日語句子</p></figcaption></figure>
+<figure><img src="/book/.gitbook/assets/CleanShot 2024-12-09 at 19.53.18@2x.png" alt=""><figcaption><p>輸入 ok 後可直接直接輸入完整日語句子</p></figcaption></figure>
 
 ## 字集設置
 
@@ -320,12 +326,11 @@ patch:
 * 「通用」：開啓過濾，只顯示在「通用字集」裏的字。
 * 「增廣」：不過濾，顯示所有字。
 
-[//]: # ({% hint style="info" %})
-「通用」字集取自於 Mi Sans 字體，共 27690 字。
+:::info
+「通用」字集取自於 [Mi Sans 字體（L1 和 L2）](https://hyperos.mi.com/font)，共 27690 字。
 
-字集定義在 moran\_charset.dict.yaml。
-
-[//]: # ({% endhint %})
+字集定義在 `moran_charset.dict.yaml`。您可以修改該文件以滿足自己的使用。
+:::
 
 ### 切換用字標準
 
@@ -338,7 +343,9 @@ patch:
 
 **快捷鍵**：Ctrl+Shift+0
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td>方案選單切換界面</td><td><p></p><p><img src="../.gitbook/assets/image (44).png" alt="「通」「臺」「港」「寍」爲內置的四個用字標準" data-size="original"></p></td><td></td></tr><tr><td>臺灣標準中「開啓」顯示爲「開啟」</td><td></td><td><img src="../.gitbook/assets/image (45).png" alt="" data-size="original"></td></tr></tbody></table>
+| 方案選單切換界面                 | ![「通」「臺」「港」「寍」爲內置的四個用字標準](/book/.gitbook/assets/image%20(44).png) |
+|----------------------------------|-----------------------------------------------------------------------------------------|
+| 臺灣標準中「開啓」顯示爲「開啟」 | ![](../.gitbook/assets/image%20(45).png)                                             |
 
 若要永久性地設置爲某個用字標準，可修改 `moran.custom.yaml`：
 
@@ -349,24 +356,21 @@ patch:
   switches/@10/reset: 3  # 永久設置爲叔寍正字
 ```
 
-[//]: # ({% hint style="warning" %})
+:::warning
 `switches/@10` 表示 switches 列表中的第 11 個元素。參見 [Rime 配置官方文檔](https://github.com/rime/home/wiki/Configuration)。
+:::
 
-[//]: # ({% endhint %})
-
-[//]: # ({% hint style="info" %})
+:::info
 這是在輸入完成後只看字形的轉換，因此不會影響輸入碼，特別是不會影響簡碼。
-
-[//]: # ({% endhint %})
+:::
 
 ## 其他功能
 
 ### 語言模型
 
-[//]: # ({% hint style="info" %})
-依賴於 [Octagram 插件](/book/maintenance/install)。
-
-[//]: # ({% endhint %})
+:::info
+依賴於 [Octagram 插件](../maintenance/install)。
+:::
 
 魔然已內置八股文語言模型數據。語言模型會提高切分和組句效果。在整句類方案中默認開啓，在碼表類方案中默認關閉。
 

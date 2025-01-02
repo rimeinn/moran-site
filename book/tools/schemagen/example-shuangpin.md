@@ -27,10 +27,9 @@ python3 schemagen.py \
 
 ## 轉換字詞碼表
 
-[//]: # ({% hint style="info" %})
+:::info
 轉換過程會保留無理碼。建議使用 gen-fixed 重新生成新碼表。
-
-[//]: # ({% endhint %})
+:::
 
 ```bash
 python3 schemagen.py \

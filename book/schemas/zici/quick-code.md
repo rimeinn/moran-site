@@ -5,10 +5,9 @@ order: 101
 
 # 簡碼整理
 
-[//]: # ({% hint style="danger" %})
-To be done.
-
-[//]: # ({% endhint %})
+:::danger
+Work In Progress
+:::
 
 ## 高頻簡碼列表
 

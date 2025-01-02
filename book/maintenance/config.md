@@ -57,7 +57,7 @@ patch:
 
 #### 輔篩模式設置
 
-轉到[對應章節](/book/schemas/fushai/features.md#掛接固定碼表)。
+轉到[對應章節](../schemas/fushai/features.md#掛接固定碼表)。
 
 ## 技術細節
 

@@ -27,7 +27,7 @@ python3 schemagen.py \
   gen-chars
 ```
 
-[//]: # ({% hint style="info" %})
+:::info
 如果主要使用簡化字，請設置相應拼音表。
 
 ```bash
@@ -36,8 +36,7 @@ python3 schemagen.py \
     --auxiliary-code=user \
   gen-chars
 ```
-
-[//]: # ({% endhint %})
+:::
 
 ## 整句詞庫
 

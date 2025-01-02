@@ -12,10 +12,9 @@ order: 4
 * 「消去輔助碼」邏輯使用 OnSelect hook 實現。當用戶選擇到一個由輔助碼提升上來的候選時，OnSelect hook 就刪除輸入末尾的 n 個字符。
 * 實現作 translator 而非 filter 是因爲需要多次請求 `script_translator`，這在 Lua filter 中是做不到的。
 
-[//]: # ({% hint style="info" %})
+:::info
 間接輔助碼已有 [HowcanoeWang/rime-lua-aux-code](https://github.com/HowcanoeWang/rime-lua-aux-code) （Lua filter）可使用。輔篩的 Lua translator 可視作對應的直接輔助碼版本。
-
-[//]: # ({% endhint %})
+:::
 
 ## 輔助碼來源
 

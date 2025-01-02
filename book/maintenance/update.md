@@ -15,7 +15,7 @@ order: 2
 
 ## 手動更新
 
-您需要借助原[下載](/book/maintenance/download.md)渠道，下載新版，並合併更新到本地用戶目錄中。
+您需要借助原[下載](../maintenance/install.md)渠道，下載新版，並合併更新到本地用戶目錄中。
 
 ::: warning
 數據無價，請在覆蓋任何數據前小心再小心！
