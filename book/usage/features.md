@@ -128,11 +128,17 @@ Emoji 定義在 `opencc/moran_emoji.txt` 中。
 
 ### 大寫字母追加上一字輔助碼
 
+:::warning
+這個功能在當前最新版中被默認關閉了，大寫字母現在默認情況下被理解爲普通的輸入碼。要使用該功能，請參考下面的說明啓用。
+:::
+
 在正常輸入時，輸入大寫字母（Shift + 字母）會把字母添加到前一個字末尾。
 
 此外，Shift+Backspace 會從上一個字的末尾刪除輸入。
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td>輸入 lm jx</td><td><img src="/book/.gitbook/assets/image (27).png" alt="" data-size="original"></td><td></td></tr><tr><td>輸入大寫 Z，z 追加到前一個字末</td><td><img src="/book/.gitbook/assets/image (28).png" alt="" data-size="original"></td><td></td></tr></tbody></table>
+| 輸入 lm jx                     | ![](/book/.gitbook/assets/image%20(27).png) |
+|--------------------------------|---------------------------------------------|
+| 輸入大寫 Z，z 追加到前一個字末 | ![](/book/.gitbook/assets/image%20(28).png) |
 
 要取消此功能，編輯 `moran.schema.yaml`，從 `key_bindings` 中刪去 `moran_capital_for_last_syllable`：
 
