@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as t}from"./chunks/framework.NOSrbWr_.js";const _=JSON.parse('{"title":"工具","description":"","frontmatter":{"order":60,"title":"工具"},"headers":[],"relativePath":"book/tools/index.md","filePath":"book/tools/index.md"}'),a={name:"book/tools/index.md"};function r(n,s,c,d,i,l){return t(),o("div")}const m=e(a,[["render",r]]);export{_ as __pageData,m as default};

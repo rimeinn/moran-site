@@ -1,0 +1,1 @@
+import{_ as e,c as t,o}from"./chunks/framework.NOSrbWr_.js";const _=JSON.parse('{"title":"魔然查字","description":"","frontmatter":{"title":"魔然查字"},"headers":[],"relativePath":"lookup/index.md","filePath":"lookup/index.md"}'),a={name:"lookup/index.md"};function n(r,s,c,i,d,p){return o(),t("div")}const m=e(a,[["render",n]]);export{_ as __pageData,m as default};

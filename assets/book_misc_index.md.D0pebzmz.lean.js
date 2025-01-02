@@ -1,0 +1,1 @@
+import{_ as e,c as t,o}from"./chunks/framework.NOSrbWr_.js";const _=JSON.parse('{"title":"後記","description":"","frontmatter":{"title":"後記","order":100},"headers":[],"relativePath":"book/misc/index.md","filePath":"book/misc/index.md"}'),a={name:"book/misc/index.md"};function r(n,s,c,i,d,m){return o(),t("div")}const f=e(a,[["render",r]]);export{_ as __pageData,f as default};
