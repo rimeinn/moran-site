@@ -4,3 +4,8 @@
     border-radius: 2px;
     transition: background-color 0.25s;
 }
+
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(240deg, #41d1ff, #bd34fe);
+}

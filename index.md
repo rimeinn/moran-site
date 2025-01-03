@@ -4,18 +4,24 @@ layout: home
 
 hero:
   name: 魔改自然碼
-  text: 簡潔優雅的輸入法
-  # tagline: a RimeInn Project
+  text: 重新發現漢字樂趣
+  tagline: 簡明、實用、高效、優雅的音形輸入方案
+  # image:
+  #   src: /logo.png
+  #   alt: 魔改自然碼
   actions:
     - theme: brand
-      text: 立即開始
+      text: 深入瞭解
+      link: ./book
+    - theme: alt
+      text: 下載安裝
       link: ./book/maintenance/install
     - theme: alt
-      text: 說明書
-      link: ./book
+      text: 在線試用
+      link: https://my-rime.vercel.app/?plum=rimeinn/rime-moran:moran,moran_sentence,moran_fixed
 
 features:
-  - title: 收字量大
+  - title: 收字廣泛
     details:
   - title: 功能豐富
     details:
