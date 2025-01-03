@@ -5,6 +5,9 @@ layout: home
 hero:
   name: 魔改自然碼
   text: 重新發現漢字樂趣
+  image:
+    src: 魔然.png
+    alt: "背景图"
   tagline: 簡明、實用、高效、優雅的音形輸入方案
   # image:
   #   src: /logo.png
