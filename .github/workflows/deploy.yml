@@ -6,9 +6,57 @@ on:
       - main
   workflow_dispatch:
 
-
 jobs:
+  demo-compile-trad:
+    runs-on: ubuntu-24.04
+    steps:
+    - name: "Demo: Build trad"
+      uses: rimeinn/deploy-schema@master
+      with:
+        user-recipe-list: |-
+          rimeinn/rime-moran@trad
+        schema-list: |-
+          moran
+          moran_fixed
+          moran_sentence
+          moran_aux
+        package-items: |-
+          build
+          lua
+          opencc
+          moran_custom_phrases.txt
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: demo-trad.zip
+        path: /tmp/deploy-schema/artifact.zip
+
+  demo-compile-simp:
+    runs-on: ubuntu-24.04
+    steps:
+    - name: "Demo: Build trad"
+      uses: rimeinn/deploy-schema@master
+      with:
+        user-recipe-list: |-
+          rimeinn/rime-moran@simp
+        schema-list: |-
+          moran
+          moran_fixed
+          moran_sentence
+          moran_aux
+        package-items: |-
+          build
+          lua
+          opencc
+          moran_custom_phrases.txt
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: demo-simp.zip
+        path: /tmp/deploy-schema/artifact.zip
+
   build:
+    needs: [demo-compile-trad, demo-compile-simp]
     runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v4
@@ -20,7 +68,7 @@ jobs:
         version: 9
     - name: Install dependencies
       run: sudo apt-get install -y opencc && pnpm install
-    - name: Build project
+    - name: Build VitePress
       run: pnpm simplify && pnpm build
     - name: Deploy
       uses: burnett01/rsync-deployments@7.0.1
