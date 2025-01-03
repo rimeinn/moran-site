@@ -1,6 +1,5 @@
 {
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
     "markdown-it-mathjax3": "^4.3.2",
     "vite": "^6.0.7",
     "vite-plugin-static-copy": "^2.2.0",
