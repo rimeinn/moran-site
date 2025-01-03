@@ -4,6 +4,20 @@ import { withSidebar } from 'vitepress-sidebar';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 const wasmPath = 'node_modules/fcitx5-rime/dist/';
 
+const viteOptions = {
+  optimizeDeps: {
+    exclude: ['fcitx5-rime'],
+  },
+  plugins: [
+    viteStaticCopy({
+      targets: ['Fcitx5.js', 'Fcitx5.wasm', 'libFcitx5Config.so', 'libFcitx5Core.so', 'libFcitx5Utils.so'].map(file => ({
+        src: wasmPath + file,
+        dest: 'assets/chunks'
+      })),
+    }),
+  ],
+}
+
 const vitePressOptions = {
   title: "魔然",
   description: "魔改自然碼",
@@ -80,20 +94,8 @@ const vitePressOptions = {
       },
     },
   },
-  vite: {
-    optimizeDeps: {
-      exclude: ['fcitx5-rime'],
-    },
-    plugins: [
-      //vue(),
-      viteStaticCopy({
-        targets: ['Fcitx5.js', 'Fcitx5.wasm', 'libFcitx5Config.so', 'libFcitx5Core.so', 'libFcitx5Utils.so'].map(file => ({
-          src: wasmPath + file,
-          dest: 'assets/chunks'
-        })),
-      }),
-    ],
-  },
+
+  vite: viteOptions,
 };
 
 const bookSidebarRootOptions = {
