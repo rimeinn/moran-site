@@ -15,7 +15,7 @@ const vitePressOptions = {
         nav: [
           { text: '首頁', link: '/' },
           { text: '說明書', link: '/book' },
-          { text: '查字', link: '/lookup' },
+          { text: '查字', link: '/moran' },
         ],
       }
     },
@@ -75,6 +75,11 @@ const vitePressOptions = {
           },
         },
       },
+    },
+  },
+  vite: {
+    optimizeDeps: {
+      exclude: ['fcitx5-rime'],
     },
   },
 };

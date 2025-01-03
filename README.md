@@ -2,5 +2,6 @@
 
 ```
 pnpm install
-pnpm dev
+make dev
+make build
 ```

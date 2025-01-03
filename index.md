@@ -6,7 +6,7 @@ hero:
   name: 魔改自然碼
   text: 重新發現漢字樂趣
   image:
-    src: 魔然.png
+    src: /魔然.png
     alt: "背景图"
   tagline: 簡明、實用、高效、優雅的音形輸入方案
   # image:
@@ -21,7 +21,7 @@ hero:
       link: ./book/maintenance/install
     - theme: alt
       text: 在線試用
-      link: https://my-rime.vercel.app/?plum=rimeinn/rime-moran:moran,moran_sentence,moran_fixed
+      link: ./demo
 
 features:
   - title: 收字廣泛
