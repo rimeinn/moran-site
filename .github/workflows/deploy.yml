@@ -18,7 +18,10 @@ jobs:
       with:
         version: 9
     - name: Install dependencies
-      run: sudo apt-get install -y opencc && pnpm install
+      run: |
+        sudo apt-get install -y opencc
+        wget -qNP demo https://github.com/rimeinn/fcitx5-rime.js/releases/download/0.1.1/fcitx5-rime.tgz
+        pnpm install
     - name: Build VitePress
       run: make
     - name: Deploy

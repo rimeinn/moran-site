@@ -21,7 +21,7 @@ hero:
       link: ./book/maintenance/install
     - theme: alt
       text: 在線試用
-      link: ./demo
+      link: https://my-rime.vercel.app/?plum=rimeinn/rime-moran:moran,moran_sentence,moran_fixed
 
 features:
   - title: 收字廣泛

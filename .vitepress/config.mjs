@@ -15,7 +15,7 @@ const vitePressOptions = {
         nav: [
           { text: '首頁', link: '/' },
           { text: '說明書', link: '/book' },
-          { text: '查字', link: '/moran' },
+          { text: '查字', link: 'https://zrmfans.cn/moran' },
         ],
       }
     },
