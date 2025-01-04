@@ -10,3 +10,6 @@ zh-Hans/
 # Downloaded Artifacts
 *.tgz
 *.zip
+
+#排除fcitx5-rime.tgz
+!demo/fcitx5-rime.tgz
