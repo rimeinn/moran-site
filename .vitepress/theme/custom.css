@@ -12,10 +12,11 @@
 
 /* 自定义Logo背景 */
 .VPHomeHero .image .image-container .image-bg {
+    position: relative;
     width: 100px;
     height: 100px;
-    top: 110px;
-    right: 180px;
+    top: 100px;
+    left: 100px;
     background-image: linear-gradient(-45deg, rgba(232, 53, 37, 0.8) 30%, rgba(242, 173, 62, 0.5));
     filter: blur(40px);
 }
